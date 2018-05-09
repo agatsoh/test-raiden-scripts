@@ -24,7 +24,7 @@ def main(token, funds, initial_channel_target, joinable_funds_target, host, port
     print("Calling Enpoint: ", join_network_url)
     put_request = put(join_network_url, data=payload)
     assert put_request.status_code == 204
-    
+    print("Joining token network successful")
 
 if __name__ == '__main__':
     main()
